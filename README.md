@@ -4,3 +4,5 @@ Ever wanted to track your exprenses? no? that's why I have created this nice app
 
 Jokes aside this project is good for beginner who want to learn React with typescript.
 This project is beginner friendly, uses typescript and React Context Hook.
+
+[Here is the live version](https://3xpence-14acker.netlify.app/)
