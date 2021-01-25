@@ -11,12 +11,11 @@ const AddTransaction = () => {
     const [nextId, setNextId] = useState(transactions.length > 0 ? transactions[transactions.length -1].id : 0)
 
     const addTransaction = () => {
-        setNextId(nextId+1)
         if (text.length > 0 && amount !== 0) {
             dispatch({
                 type: 'ADD_TRANSACTION',
                 payload: {
-                    id: nextId,
+                    id: nextId+1,
                     text,
                     amount
                 }
@@ -24,6 +23,7 @@ const AddTransaction = () => {
             setText('')
             setAmount(0.0)
         }
+        setNextId(nextId+1)
     }
 
     return (
